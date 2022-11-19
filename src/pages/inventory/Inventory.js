@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import axios from 'axios'
 import Products from '../../components/Products';
+import { Link } from 'react-router-dom';
 
 const URL = 'http://localhost:9999/inventory-service/products?projection=fullProduct'
 
@@ -34,9 +35,15 @@ export default function Inventory() {
 
   return (
     <div className='p-12'>
-        <div className='flex flex-wrap -mx-1 lg:-mx-4'>
-            <h1 className='text-3xl font-bold mb-6'>Products</h1>
-            <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-6 ml-auto'>Add Product</button>
+        <div className='flex justify-between -mx-1 lg:-mx-4'>
+            <div>
+                <h1 className='text-3xl font-bold mb-6'>Products</h1>
+            </div>
+            <div>
+                <Link to='/add-product'>
+                    <button className='bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-6 ml-auto'>Add Product</button>
+                </Link>
+            </div>
         </div>
         <Products products={products}/>
     </div>
