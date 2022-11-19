@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import axios from 'axios'
 import CustomersTable from '../../components/CustomersTable';
+import { Link } from 'react-router-dom';
 
 const URL = 'http://localhost:9999/customer-service/customers?projection=fullCustomer'
 
@@ -9,12 +10,12 @@ export default function Customers() {
     const [customers, getCustomers] = useState(null);
 
     useEffect(() => {
-        console.log("Getting all customers");
+        //console.log("Getting all customers");
         axios.get(`${URL}`).then((response) => {
-            console.log(response.data._embedded.customers)
+            //console.log(response.data._embedded.customers)
             getCustomers(response.data._embedded.customers)
         }).catch((error) => {
-            console.log(error)
+            console.error(error)
         })
     }, []);
 
@@ -34,7 +35,16 @@ export default function Customers() {
 
   return (
     <div className='p-12'>
-        <h1 className='text-3xl font-bold mb-6'>Customers</h1>
+        <div className='flex justify-between -mx-1 lg:-mx-4'>
+            <div>
+                <h1 className='text-3xl font-bold mb-6'>Customers</h1>
+            </div>
+            <div>
+                <Link to='/add-customer'>
+                    <button className='bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-6 ml-auto'>Add Customer</button>
+                </Link>
+            </div>
+        </div>        
         <CustomersTable customers={customers}/>
     </div>
   )

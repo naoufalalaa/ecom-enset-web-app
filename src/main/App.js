@@ -8,6 +8,8 @@ import Customers from '../pages/customers/Customers';
 import Inventory from '../pages/inventory/Inventory';
 import Orders from '../pages/orders/Orders';
 import Customer from '../pages/customers/Customer';
+import AddCustomer from '../pages/customers/AddCustomer';
+
 function App() {
   return (
     <Router>
@@ -16,6 +18,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/customers" element={<Customers/>} />
         <Route path="/customer/:id" element={<Customer/>} />
+        <Route path="/add-customer/" element={<AddCustomer/>} />
         <Route path="/products" element={<Inventory/>} />
         <Route path="/orders" element={<Orders/>} />
         <Route path="/orders/:id" element={<Orders/>} />

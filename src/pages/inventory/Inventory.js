@@ -9,12 +9,12 @@ export default function Inventory() {
     const [products, getProducts] = useState(null);
 
     useEffect(() => {
-        console.log("Getting all products");
+        //console.log("Getting all products");
         axios.get(`${URL}`).then((response) => {
-            console.log(response.data._embedded.products)
+            //console.log(response.data._embedded.products)
             getProducts(response.data._embedded.products)
         }).catch((error) => {
-            console.log(error)
+            console.error(error)
         })
     }, []);
 
@@ -34,7 +34,10 @@ export default function Inventory() {
 
   return (
     <div className='p-12'>
-        <h1 className='text-3xl font-bold mb-6'>Products</h1>
+        <div className='flex flex-wrap -mx-1 lg:-mx-4'>
+            <h1 className='text-3xl font-bold mb-6'>Products</h1>
+            <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-6 ml-auto'>Add Product</button>
+        </div>
         <Products products={products}/>
     </div>
   )

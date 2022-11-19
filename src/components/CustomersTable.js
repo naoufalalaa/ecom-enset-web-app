@@ -1,7 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function CustomersTable(props) {
-    console.log(props.customers)
   return (
     <div className='flex flex-col'>
             <div className='overflow-x-auto'>
@@ -24,7 +24,7 @@ export default function CustomersTable(props) {
                                         <div className='flex items-center'>
                                             <div className='ml-4'>
                                                 <div className='text-sm leading-5 font-medium text-gray-900'>
-                                                    {customer.name}
+                                                    <Link to={`/customer/${customer.id}`}>{customer.name}</Link>
                                                 </div>
                                             </div>
                                         </div>

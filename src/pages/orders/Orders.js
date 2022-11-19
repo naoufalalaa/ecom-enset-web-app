@@ -9,12 +9,12 @@ export default function Orders() {
   const [orders, getOrders] = useState(null);
 
     useEffect(() => {
-        console.log("Getting all orders");
+        //console.log("Getting all orders");
         axios.get(`${URL}`).then((response) => {
-            console.log(response.data)
+            //console.log(response.data)
             getOrders(response.data)
         }).catch((error) => {
-            console.log(error)
+            console.error(error)
         })
     }, []);
 
@@ -34,7 +34,10 @@ export default function Orders() {
 
   return (
     <div className='p-12'>
-        <h1 className='text-3xl font-bold mb-6'>Orders</h1>
+        <div className='flex flex-wrap -mx-1 lg:-mx-4'>
+            <h1 className='text-3xl font-bold mb-6'>Orders</h1>
+            <button className='bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-6 ml-auto'>Add Order</button>
+        </div>
         <Order orders={orders}/>
     </div>
   )
