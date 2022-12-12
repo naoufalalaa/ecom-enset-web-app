@@ -97,7 +97,7 @@ export default function Order(props) {
                                           <div className='flex items-center'>
                                               <div className='ml-4'>
                                                   <div className='text-sm leading-5 font-medium text-blue-500 underline'>
-                                                      <Link to={`order/${order.id}`}>
+                                                      <Link to={`/orders/${order.id}`}>
                                                         {`see all the details >>`}
                                                       </Link> 
                                                   </div>

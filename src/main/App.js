@@ -10,6 +10,7 @@ import Orders from '../pages/orders/Orders';
 import Customer from '../pages/customers/Customer';
 import AddCustomer from '../pages/customers/AddCustomer';
 import AddProduct from '../pages/inventory/AddProduct';
+import Order from '../pages/orders/Order';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         <Route path="/products" element={<Inventory/>} />
         <Route path="/add-product/" element={<AddProduct/>} />
         <Route path="/orders" element={<Orders/>} />
-        <Route path="/orders/:id" element={<Orders/>} />
+        <Route path="/orders/:id" element={<Order/>}/>
       </Routes>
     </Router>
   );

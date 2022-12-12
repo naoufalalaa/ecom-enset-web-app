@@ -1,22 +1,23 @@
 import React from 'react'
 import axios from 'axios'
+import { useParams } from 'react-router-dom'
 
 //get id form url
-const id = window.location.pathname.split('/')[2]
-const URL = `http://localhost:9999/customer-service/customers/${id}`
+const URL = `http://localhost:9999/customer-service/customers/`
 
 
 export default function Customer() {
     const [customer, setCustomer] = React.useState(null)
+    const {id} = useParams();
     React.useEffect(() => {
-        axios.get(`${URL}`).then((response) => {
+        axios.get(`${URL}${id}`).then((response) => {
             setCustomer(response.data)
         }).catch((error) => {
             console.error(error)
         })
-    }, [])
+    }, [id])
     document.getElementById('deleteButton')?.addEventListener('click', () => {
-        axios.delete(`${URL}`).then((response) => {
+        axios.delete(`${URL}${id}`).then((response) => {
             alert('Customer deleted successfully')
             window.location.href = '/customers'
         }).catch((error) => {
@@ -78,7 +79,7 @@ export default function Customer() {
                     </tbody>
                 </table>
             </div>
-            <div className='flex flex-wrap -mx-1 lg:-mx-4'>
+            <div className='flex flex-wrap -mx-1 my-4 lg:-mx-4'>
                 <button id='deleteButton' className='bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded'>
                     Delete
                 </button>

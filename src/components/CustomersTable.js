@@ -23,8 +23,8 @@ export default function CustomersTable(props) {
                                     <td className='px-6 py-4 whitespace-no-wrap border-b border-gray-200'>
                                         <div className='flex items-center'>
                                             <div className='ml-4'>
-                                                <div className='text-sm leading-5 font-medium text-gray-900'>
-                                                    <Link to={`/customer/${customer.id}`}>{customer.name}</Link>
+                                                <div className='text-sm leading-5 font-medium '>
+                                                   ÷ <Link to={`/customer/${customer.id}`}>{customer.name}</Link>
                                                 </div>
                                             </div>
                                         </div>
