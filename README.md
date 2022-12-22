@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# E-com-enset-webApp
+## Context
+This project actually follows the existing one on : https://github.com/naoufalalaa/com-enset-ms
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The frontend application uses the libraries ReactJs and Tailwindcss for the component's design and styling.
 
-## Available Scripts
+<p><img src="https://user-images.githubusercontent.com/61352259/209180909-75bfdef3-ccc7-4a7f-b989-1e7e5ea229dc.png" width="100px"/>
+<img src="https://user-images.githubusercontent.com/61352259/209180982-b70bc513-3de6-4195-ba77-173c30ce555d.png" width="100px"/>
+</p>
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Overview over the platform
+### Displaying all customers
+![Screenshot 2022-12-22 at 16 53 12](https://user-images.githubusercontent.com/61352259/209173665-b6220e6f-70f7-49d8-9561-c788c942ed20.png)
+### Adding a Customer
+![Screenshot 2022-12-22 at 16 53 31](https://user-images.githubusercontent.com/61352259/209173690-24308447-5a6f-4c64-b9ed-35b6ebaed4bf.png)
+### Review customer
+![Screenshot 2022-12-22 at 16 53 51](https://user-images.githubusercontent.com/61352259/209173706-ee53a69b-5413-4187-be91-3c460c088f92.png)
+### Displaying all products
+![Screenshot 2022-12-22 at 16 54 03](https://user-images.githubusercontent.com/61352259/209173712-67c782a0-6fa4-4629-9b21-04906410bb0d.png)
+### Adding a product
+![Screenshot 2022-12-22 at 16 54 39](https://user-images.githubusercontent.com/61352259/209173730-3f5c820f-5d81-420d-b07d-635ce0b5709a.png)
+### Displaying Orders
+![Screenshot 2022-12-22 at 16 55 06](https://user-images.githubusercontent.com/61352259/209173742-139b8a56-c4ce-4733-af12-2e06fb58ab7a.png)
+### Reviewing an Order
+![Screenshot 2022-12-22 at 17 33 56](https://user-images.githubusercontent.com/61352259/209180661-2d7f77b4-9e89-4d17-9718-3b3f5f5928cc.png)
